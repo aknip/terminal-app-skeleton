@@ -1,5 +1,5 @@
 """
-Logger module for Dexter AI assistant.
+Logger module 
 
 This module provides a logging interface that wraps the UI system to provide
 consistent, formatted output for different types of agent activities and states.

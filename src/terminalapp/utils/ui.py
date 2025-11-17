@@ -1,5 +1,5 @@
 """
-Interactive user interface module for Dexter AI assistant.
+Interactive user interface module 
 
 This module provides a comprehensive UI system with colors, animations, and
 formatted output for creating a professional command-line interface. It includes
