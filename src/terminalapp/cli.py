@@ -1,28 +1,34 @@
-from terminalapp.main import Agent
+"""
+Command Line Interface for Dexter AI Assistant.
+
+Provides agent selection and interactive capabilities using the UI and Logger systems.
+"""
+
+from terminalapp.agent_demo import AgentDemo
 from terminalapp.utils.intro import print_intro
+from terminalapp.utils.ui import UI
+from terminalapp.utils.logger import Logger
 from prompt_toolkit import PromptSession
 from prompt_toolkit.history import InMemoryHistory
 
+
+
+def run_simple_agent():
+    """Run the simple interactive agent."""
+    agent = AgentDemo()
+    agent.run()
+
+
 def main():
+    """Main CLI entry point with agent selection."""
+    # Initialize UI and Logger for CLI interactions
+    ui = UI()
+    logger = Logger()
+    
+    # Show intro screen
     print_intro()
-    agent = Agent()
 
-    # Create a prompt session
-    session = PromptSession(history=InMemoryHistory())
-
-    while True:
-        try:
-          # Prompt the user for input
-          query = session.prompt(">> ")
-          if query.lower() in ["exit", "quit"]:
-              print("Goodbye!")
-              break
-          if query:
-              # Run the agent (shows 5-second spinner)
-              agent.run(query)
-        except (KeyboardInterrupt, EOFError):
-            print("\nGoodbye!")
-            break
+    run_simple_agent()
 
 
 if __name__ == "__main__":

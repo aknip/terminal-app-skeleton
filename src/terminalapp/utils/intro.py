@@ -30,8 +30,7 @@ def print_intro():
     for line in ascii_art.split('\n'):
         print(f"{LIGHT_BLUE}{line}{RESET}")
     
-    print()
-    print("Your AI assistant for financial analysis.")
+    print("Your AI assistant for everything.")
     print("Ask me any questions. Type 'exit' or 'quit' to end.")
     print()
 
