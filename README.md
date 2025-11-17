@@ -16,6 +16,7 @@ cd terminal-app-skeleton
 2. Install dependencies with uv:
 ```bash
 uv sync
+source .venv/bin/activate
 ```
 
 ### Usage
