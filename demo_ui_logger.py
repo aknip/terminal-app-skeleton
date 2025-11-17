@@ -251,7 +251,7 @@ def main():
     """Run all UI and Logger demos."""
     print(f"{Colors.BOLD}{Colors.LIGHT_BLUE}")
     print("╔" + "═" * 60 + "╗")
-    print("║" + " " * 15 + "DEXTER UI & LOGGER DEMO" + " " * 22 + "║") 
+    print("║" + " " * 15 + "UI & LOGGER DEMO" + " " * 22 + "║") 
     print("╚" + "═" * 60 + "╝")
     print(f"{Colors.ENDC}\n")
     
